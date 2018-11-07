@@ -1,0 +1,113 @@
+/*
+Theme Name: Restaurant and Cafe Child
+Theme URI: https://raratheme.com/wordpress-themes/restaurant-and-cafe/
+Template: restaurant-and-cafe
+Author: Rara Theme
+Author URI: http://raratheme.com/
+Description: Restaurant and Cafe WordPress theme is a perfect solution for restaurants, cafe or any food and drink businesses. Whether you are running a cafe shop, a bakery or a large luxurious restaurant, Restaurant and Cafe theme will meet your expectation and give your customer a great experience! Restaurant and Cafe Theme comes with a Banner section, Feature section, About section, Services Section, Testimonial section, Restaurant Menu section, Reservation section and Blog section on Home or front-page. It is also WooCommerce ready and translation ready. The theme is responsive/mobile-friendly and so your website will look gorgeous in the mobile and tablet devices.Check the demo at https://raratheme.com/preview/restaurant-and-cafe/, documentation at https://raratheme.com/documentation/restaurant-cafe/ and get support at https://raratheme.com/support-ticket.
+Tags: one-column,two-columns,right-sidebar,custom-menu,featured-images,flexible-header,post-formats,sticky-post,threaded-comments,translation-ready,custom-background,footer-widgets,full-width-template,theme-options,e-commerce,food-and-drink,blog
+Version: 1.1.2.1540214269
+Updated: 2018-10-24
+
+*/
+
+.site-header{
+	background: transparent;
+}
+/*.main-navigation{display:none;}*/ /*under dev*/
+
+.main-navigation {
+	margin: 30px 0 0;
+}
+
+
+.section-2 {
+	background: #ebda9a;
+}
+
+.about-img {
+	width: 60%;
+	text-align: center;
+	margin: auto;
+}
+
+.main-title {
+	text-align: center;
+}
+
+.about-us {
+	padding: 30px 30px;
+	background: black;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about-us .col {
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	flex: 1;
+	color: white;
+}
+
+.about-text {
+	font-size: 24px;
+	text-align: justify;
+}
+
+.site-footer {
+	font-family: 'Cardo', serif;
+}
+
+.site-footer .col-3 {
+	width: 50%;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 30px;
+}
+
+.site-footer h2 {
+	color: white;
+	font-size: 24px;
+}
+
+
+
+/*responsive style*/
+
+@media only screen and (max-width: 991px){
+
+	.main-navigation{display: block;}
+	#mobile-header{display: none;}
+
+
+}
+
+/* Change navigation display when the menu has more items */
+
+@media only screen and (max-width: 767px) {
+	.main-navigation{display:none;}
+	.site-branding{display:none;}
+	.site-header {
+		position: absolute;
+	}
+	.container {
+		width: 90%;
+	}
+
+	.about-text {
+		font-size: 16px;
+		text-align: justify;
+	}
+
+	.section-2 .main-title {
+		font-size: 28px;
+	}
+
+	.about-us {
+		flex-direction:column;
+	}
+}
+
