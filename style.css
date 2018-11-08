@@ -13,11 +13,30 @@ Updated: 2018-10-24
 
 .site-header{
 	background: transparent;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position:absolute;
 }
+
+.sticky-header {
+	background: #ecdccf;
+	position: fixed;
+	top: 0;
+	transition: all 0.3s ease;
+}
+
+.site-branding {
+	display: none;
+}
+
 /*.main-navigation{display:none;}*/ /*under dev*/
 
 .main-navigation {
-	margin: 30px 0 0;
+	margin-top: 26px;
+}
+
+.sticky-navigation ul li a {
+    color: black;
 }
 
 
@@ -88,11 +107,9 @@ Updated: 2018-10-24
 /* Change navigation display when the menu has more items */
 
 @media only screen and (max-width: 767px) {
+
 	.main-navigation{display:none;}
-	.site-branding{display:none;}
-	.site-header {
-		position: absolute;
-	}
+	#mobile-heaader{display:absolute;}
 	.container {
 		width: 90%;
 	}

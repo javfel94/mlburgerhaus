@@ -25,8 +25,8 @@
 	<header id="masthead" class="site-header <?php if( !is_page_template( 'template-home.php' ) ) echo 'header-inner'; ?>" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 		<div class = "container">
 		<div class="site-branding" itemscope itemtype="http://schema.org/Organization">
-			<img src="https://mlburgerhaus.com/wp-content/uploads/2018/10/ml-logo.jpeg" width="100" height="100" >
-		</div><!-- .site-branding -->
+			<img src="https://mlburgerhaus.com/wp-content/uploads/2018/11/ML_burgerhaus_logo.png" width="70" height="70" >
+		</div>
 			<div id="mobile-header">
 			    <a id="responsive-menu-button" href="#sidr-main">
 			    	<span class="fa fa-navicon"></span>
