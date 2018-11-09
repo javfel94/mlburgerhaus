@@ -80,8 +80,6 @@ Updated: 2018-10-24
 }
 
 .site-footer .col-3 {
-	width: 50%;
-	float: left;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-bottom: 30px;
@@ -90,6 +88,11 @@ Updated: 2018-10-24
 .site-footer h2 {
 	color: white;
 	font-size: 24px;
+}
+
+.widget-area .container {
+	display: flex;
+	justify-content: space-around;
 }
 
 
@@ -125,6 +128,14 @@ Updated: 2018-10-24
 
 	.about-us {
 		flex-direction:column;
+	}
+
+	.widget-area .container {
+		flex-direction: column;
+	}
+
+	.col-3 {
+		margin-left : 30px;
 	}
 }
 
