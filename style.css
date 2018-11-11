@@ -52,6 +52,10 @@ Updated: 2018-10-24
 
 .main-title {
 	text-align: center;
+	width:100%;
+	color: white;
+	margin-bottom: 50px;
+	font-size: 38px;
 }
 
 .about-us {
@@ -122,8 +126,9 @@ Updated: 2018-10-24
 		text-align: justify;
 	}
 
-	.section-2 .main-title {
-		font-size: 28px;
+	.about-us .main-title {
+		font-size: 22px;
+		margin-bottom: 30px;
 	}
 
 	.about-us {

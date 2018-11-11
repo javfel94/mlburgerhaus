@@ -16,15 +16,25 @@ $(document).ready(function(){
 
     //Owl Carousel animation
     $('.owl-carousel').owlCarousel({
-        items:1,
         loop:true,
         margin:10,
-        //autoplay:true,
-        //autoplayTimeout:8000,
-        //autoplayHoverPause:true,
-        nav:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        nav:false,
         center:true,
-        navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
+        navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
     });
 
 
