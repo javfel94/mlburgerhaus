@@ -18,6 +18,12 @@ Updated: 2018-10-24
 	position:absolute;
 }
 
+.site-header-page{
+	background: #ecdccf;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
 .sticky-header {
 	background: #ecdccf;
 	position: fixed;
@@ -25,8 +31,12 @@ Updated: 2018-10-24
 	transition: all 0.3s ease;
 }
 
-.site-branding {
+.site-header .site-branding {
 	display: none;
+}
+
+.site-header-page .site-branding {
+	float:left;
 }
 
 /*.main-navigation{display:none;}*/ /*under dev*/
@@ -35,7 +45,8 @@ Updated: 2018-10-24
 	margin-top: 26px;
 }
 
-.sticky-navigation ul li a {
+.sticky-navigation ul li a,
+.site-header-page ul li a {
     color: black;
 }
 

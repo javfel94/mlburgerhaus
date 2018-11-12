@@ -4,13 +4,13 @@ $(document).ready(function(){
     $(window).scroll(function() {
         if ($(this).scrollTop() > 1){
         $('.site-header').addClass('sticky-header');
-        $('.main-navigation').addClass('sticky-navigation');
-        $('.site-branding').fadeIn(300);
+        $('.site-header .main-navigation').addClass('sticky-navigation');
+        $('.site-header .site-branding').fadeIn(300);
         }
         else{
         $('.site-header').removeClass('sticky-header');
-        $('.main-navigation').removeClass('sticky-navigation');
-        $('.site-branding').hide();
+        $('.site-header .main-navigation').removeClass('sticky-navigation');
+        $('.site-header .site-branding').hide();
         }
     });
 
