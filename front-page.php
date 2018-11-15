@@ -10,7 +10,8 @@
     $restaurant_and_cafe_reservation_section_bg = get_theme_mod( 'restaurant_and_cafe_reservation_section_bg' );
 
 get_header(); 
-            
+
+           
     if ( 'posts' == get_option( 'show_on_front' ) ) {
 
        include( get_home_template() );
@@ -50,13 +51,6 @@ get_header();
     }
 
     ?>
-    <div class="photo-carousel">
-        <div class="owl-carousel owl-theme">
-            <div><img src="https://mlburgerhaus.com/wp-content/uploads/2018/11/burger-1-e1541949692626.jpeg" alt="Burger" /></div>
-            <div><img src="https://mlburgerhaus.com/wp-content/uploads/2018/11/burger-3-e1541949662126.jpeg" alt="Burger" /></div>
-            <div><img src="https://mlburgerhaus.com/wp-content/uploads/2018/11/burger-2-e1541949722401.jpeg" alt="Burger" /></div>
-        </div>
-    </div>
     <div class="about-us" id="about">
         <h2 class="main-title">M&amp;L Burger Haus, pronto en Donostia.</h2>
         <div class="col">                        
@@ -71,6 +65,13 @@ get_header();
                 <p>Por ello ofrecemos unas hamburguesas diferentes a cualquier otra del mercado, con unos sabores vivos y una jugosidad y frescura que no se encuentra en otra parte. Todo ello utilizando productos de la tierra, ya que siempre hemos creído en promover el producto local y aprovechar su alta calidad.</p>
                 <p>En M&amp;L no nos olvidamos de nadie y por ello ofrecemos opciones para todo tipo de gustos: hamburguesas de ternera, de pollo y vegetarianas. Siendo esta último de un concepto que nada tiene que ver con el resto de hamburguesas vegetarianas del mercado.</p>                        
             </div>                         
+        </div>
+    </div>
+    <div class="photo-carousel">
+        <div class="owl-carousel owl-theme">
+            <div><img src="https://mlburgerhaus.com/wp-content/uploads/2018/11/burger-1-e1541949692626.jpeg" alt="Burger" /></div>
+            <div><img src="https://mlburgerhaus.com/wp-content/uploads/2018/11/burger-3-e1541949662126.jpeg" alt="Burger" /></div>
+            <div><img src="https://mlburgerhaus.com/wp-content/uploads/2018/11/burger-2-e1541949722401.jpeg" alt="Burger" /></div>
         </div>
     </div>
 
