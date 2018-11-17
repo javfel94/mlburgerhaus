@@ -51,19 +51,10 @@ function restaurant_and_cafe_banner_cb_child(){     // BANNER FOR CHILD THEME
                         $banner_qry->the_post();
                         $categories_list = get_the_category_list( esc_html__( ', ', 'restaurant-and-cafe' ) );
                         if( has_post_thumbnail() ){
-                            the_post_thumbnail( 'restaurant-and-cafe-banner', array( 'itemprop' => 'image' ) );
-                        ?>
-                       <!-- <div class="banner-text">
-                        <div class="container">
-                        <div class="text">
-                          <strong class="title"><?php //the_title(); ?></strong>
-                          <?php //the_excerpt(); ?>
-                            <a href="<?php //the_permalink(); ?> " class="btn-green"><?php //echo esc_html( $restaurant_and_cafe_banner_read_more ); ?></a>
-                        </div>
-                        </div>
-                        </div>
-                      <div class="btn-scroll-down"><span><?php //esc_html_e('scroll Down','restaurant-and-cafe'); ?></span></div><div id="next_section"></div> -->
-                      
+                            $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
+                            echo '<div class="banner" id="slider" style="background-image: url('. esc_url($featured_img_url) .')">';
+                            echo '</div>';
+                        ?>                      
                         <?php
                         }
                     }

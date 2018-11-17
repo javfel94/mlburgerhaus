@@ -36,8 +36,11 @@ get_header();
                     <?php get_template_part( 'sections/section', esc_attr( $restaurant_and_cafe_section['id'] ) ); ?>
                 </section>
 
-            <?php 
-            }else{ ?>
+            <?php  }elseif ( $restaurant_and_cafe_section['id'] == "slider") { ?>  
+
+                    <?php get_template_part( 'sections/section', esc_attr( $restaurant_and_cafe_section['id'] ) ); //section tag added in template, to add background image as css property?> 
+             
+            <?php }else { ?>
                 <section class="<?php echo esc_attr( $restaurant_and_cafe_section['class'] ); ?>" id="<?php echo esc_attr( $restaurant_and_cafe_section['id'] ); ?>">
                     <?php get_template_part( 'sections/section', esc_attr( $restaurant_and_cafe_section['id'] ) ); ?>
                 </section>
