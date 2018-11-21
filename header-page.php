@@ -55,5 +55,5 @@
 	$ed_section         = restaurant_and_cafe_get_sections();
 
     if( is_home() || ! $ed_section  || ! ( is_front_page()  || is_page_template( 'template-home.php' ) ) ){
-		echo '<div class = "container"><div id="content" class="site-content"><div class = "row">';
+		echo '<div class = "container sticky-footer"><div id="content" class="site-content"><div class = "row">';
 	} ?>

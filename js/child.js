@@ -4,12 +4,12 @@ $(document).ready(function(){
     $(window).scroll(function() {
         if ($(this).scrollTop() > 1){
         $('.site-header').addClass('sticky-header');
-        $('.site-header .main-navigation').addClass('sticky-navigation');
+        //$('.site-header .main-navigation').addClass('sticky-navigation'); navigation menu is not displayed now after scrolling
         $('.site-header .site-branding').fadeIn(300);
         }
         else{
         $('.site-header').removeClass('sticky-header');
-        $('.site-header .main-navigation').removeClass('sticky-navigation');
+        //$('.site-header .main-navigation').removeClass('sticky-navigation');
         $('.site-header .site-branding').hide();
         }
     });
