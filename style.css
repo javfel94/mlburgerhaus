@@ -18,19 +18,17 @@ html, body, .site {
 	background-color: black;
 }
 
-.site-header{
-	background: transparent;
+.site-header,
+.site-header-page{
+	background: rgba(236,220,207,0.75);
 	padding-top: 5px;
 	padding-bottom: 5px;
 	position:absolute;
 	height: 90px;
 }
 
-.site-header-page{
-	background: rgba(236,220,207,1);
-	padding-top: 5px;
-	padding-bottom: 5px;
-	height: 90px;
+.site-header-page {
+	width:100%;
 }
 
 .sticky-header {
@@ -40,8 +38,8 @@ html, body, .site {
 	transition: all 0.3s ease;
 }
 
-.site-header .site-branding,
-.sticky-header .main-navigation {
+
+.site-header-page .main-navigation {
 	display: none;
 }
 
@@ -53,6 +51,10 @@ html, body, .site {
 
 .main-navigation {
 	margin-top: 24px;
+}
+
+.main-navigation ul li a{
+	color: black;
 }
 
 .sticky-navigation ul li a,
@@ -132,15 +134,53 @@ html, body, .site {
 	margin-top: auto;
 	margin-bottom: auto;
 }
+
+.about-us-link {
+	font-size: 34px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.about-us-link a{
+	color: rgba(236,220,207,1);
+}
+
  /*Content in pages*/
 .site-content {
 	color: white;
+	padding-top: 100px;
 }
 
 .entry-content p{
 	font-size: 24px;
 	text-align: justify;
 }
+
+.entry-header {
+	text-align: center;
+}
+
+#primary .page .entry-header .entry-title {
+	font: 38px 'Lato', sans-serif;
+	font-weight: bold;
+	color: white;
+}
+
+#primary .post,
+#primary .page {
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*class applied in page container, to make the footer sticky*/
+.sticky-footer {
+	min-height: calc(100vh - 200px);
+}
+
+
+/*Footer styles*/
 
 .site-footer {
 	font-family: 'Cardo', serif;
@@ -156,11 +196,6 @@ html, body, .site {
 .site-footer h2 {
 	color: white;
 	font-size: 24px;
-}
-
-/*class applied in page container, to make the footer sticky*/
-.sticky-footer {
-	min-height: calc(100vh - 290px);
 }
 
 .widget-area .container {

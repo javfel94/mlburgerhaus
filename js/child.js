@@ -1,7 +1,12 @@
 $(document).ready(function(){
 
+    //Function for smooth scrolling
+    var scrollAnimation = function(height, duration) {
+        $('html, body').animate({ scrollTop: height }, {duration: duration});
+    }
+
     // Sticky Heaader
-    $(window).scroll(function() {
+    /*$(window).scroll(function() {
         if ($(this).scrollTop() > 1){
         $('.site-header').addClass('sticky-header');
         //$('.site-header .main-navigation').addClass('sticky-navigation'); navigation menu is not displayed now after scrolling
@@ -12,7 +17,7 @@ $(document).ready(function(){
         //$('.site-header .main-navigation').removeClass('sticky-navigation');
         $('.site-header .site-branding').hide();
         }
-    });
+    });*/
 
     //Owl Carousel animation
     $('.owl-carousel').owlCarousel({
@@ -35,6 +40,19 @@ $(document).ready(function(){
                 items:5
             }
         }
+    });
+
+    //Smooth scrolling
+    $('a[href^="#about"]').on('click',function(event){
+        event.preventDefault(); 
+        var h = $('.banner').height();
+        scrollAnimation(h, 400);
+    });
+
+    $('a[href^="#colophon"]').on('click',function(event){
+        event.preventDefault(); 
+        var h = $('.site-footer').offset();
+        scrollAnimation(h.top, 600);
     });
 
 
