@@ -43,13 +43,13 @@ $(document).ready(function(){
     });
 
     //Smooth scrolling
-    $('a[href^="#about"]').on('click',function(event){
+    $('.main-navigation a[href^="#about"]').on('click',function(event){
         event.preventDefault(); 
-        var h = $('.banner').height();
-        scrollAnimation(h, 400);
+        var h = $('.about-us').offset();
+        scrollAnimation(h.top, 400);
     });
 
-    $('a[href^="#colophon"]').on('click',function(event){
+    $('.main-navigation a[href^="#colophon"]').on('click',function(event){
         event.preventDefault(); 
         var h = $('.site-footer').offset();
         scrollAnimation(h.top, 600);
