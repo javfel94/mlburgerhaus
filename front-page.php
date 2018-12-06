@@ -58,27 +58,27 @@ get_header();
         <h2 class="main-title">M&amp;L Burger Haus, pronto en Donostia.</h2>                             
         <div class="about-row">                        
             <p>M&amp;L BurgerHaus nace con la intención de acercar esta ciudad, tan dada a la buena gastronomía, a un producto que en los últimos años ha dejado de ser considerado comida basura y se ha convertido en una comida saludable y gourmet.</p>
-            <div class="img-container"><img src="https://mlburgerhaus.com/wp-content/uploads/2018/11/icons8-hamburger-80.png" alt="burger-image"/></div>                      
+            <div class="img-container"><img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2018/11/icons8-hamburger-80.png" alt="burger-image"/></div>                      
         </div>
         <div class="about-row">                                  
             <p>La hamburguesa es el eje de nuestro local, pero ni mucho menos el único producto que ofrecemos. Alitas de pollo al auténtico estilo americano, suculentos postres caseros y una variada carta de cervezas artesanales son algunas de nuestras propuestas adicionales.</p>
-            <div class="img-container"><img src="https://mlburgerhaus.com/wp-content/uploads/2018/11/icons8-beer-glass-64.png" alt="beer-image"/></div>                      
+            <div class="img-container"><img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2018/11/icons8-beer-glass-64.png" alt="beer-image"/></div>                      
         </div>
         <div class="about-row">                        
             <p>En M&amp;L no nos olvidamos de nadie y por ello ofrecemos opciones para todo tipo de gustos: hamburguesas de ternera, de pollo y vegetarianas. Todo ello utilizando productos locales y de alta calidad. </p>
-            <div class="img-container"><img src="https://mlburgerhaus.com/wp-content/uploads/2018/11/icons8-natural-food-64.png" alt="healthy-food-image"/></div>                    
+            <div class="img-container"><img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2018/11/icons8-natural-food-64.png" alt="healthy-food-image"/></div>                    
         </div>
         <div class="about-us-link">
-            <a href="https://mlburgerhaus.com/conocenos/">Conócenos</a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>conocenos/">Conócenos</a>
         </div>
     </div>
     <div class="photo-carousel">
         <div class="owl-carousel owl-theme">
-            <div><img src="https://mlburgerhaus.com/wp-content/uploads/2018/11/burger-1-e1541949692626.jpeg" alt="Burger" /></div>
-            <div><img src="https://mlburgerhaus.com/wp-content/uploads/2018/11/burger-3-e1541949662126.jpeg" alt="Burger" /></div>
-            <div><img src="https://mlburgerhaus.com/wp-content/uploads/2018/11/DSC_0302.jpg" alt="Burger" /></div>
-            <div><img src="https://mlburgerhaus.com/wp-content/uploads/2018/11/DSC_0305.jpg" alt="Burger" /></div>
-            <div><img src="https://mlburgerhaus.com/wp-content/uploads/2018/11/ml-burger.jpeg" alt="Burger" /></div>
+            <div><img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2018/11/burger-1-e1541949692626.jpeg" alt="Burger" /></div>
+            <div><img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2018/11/burger-3-e1541949662126.jpeg" alt="Burger" /></div>
+            <div><img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2018/11/DSC_0302.jpg" alt="Burger" /></div>
+            <div><img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2018/11/DSC_0305.jpg" alt="Burger" /></div>
+            <div><img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2018/11/ml-burger.jpeg" alt="Burger" /></div>
         </div>
     </div>
 

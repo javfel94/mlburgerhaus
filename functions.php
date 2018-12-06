@@ -10,12 +10,15 @@ if ( !defined( 'ABSPATH' ) ) exit;
     function my_theme_enqueue_styles() {
 
         $parent_style = 'parent-style'; 
-    
+        $query_args = array(
+            'family' => 'Cardo:400,700|Lato:400,700,400italic',
+            );
         wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
         wp_enqueue_style( 'child-style',
             get_stylesheet_directory_uri() . '/style.css',
             array( $parent_style )
         );
+        wp_enqueue_style( 'child-google-fonts', "//fonts.googleapis.com/css?family=Nunito");
     }
 
     function my_theme_scripts_function() {

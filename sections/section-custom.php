@@ -1,18 +1,11 @@
 <?php
 /**
- * Custom Section: picture carousel and description
- * Need to integrate with the backend 
+ * Custom Section: brief presentation about the company
+ * Need to integrate with the backend (modify customizer)
  */
 
  ?>
 
-<div class="photo-carousel">
-    <div class="owl-carousel owl-theme">
-        <div><img src="https://mlburgerhaus.com/wp-content/uploads/2018/11/burger-1-e1541949692626.jpeg" alt="Burger" /></div>
-        <div><img src="https://mlburgerhaus.com/wp-content/uploads/2018/11/burger-3-e1541949662126.jpeg" alt="Burger" /></div>
-        <div><img src="https://mlburgerhaus.com/wp-content/uploads/2018/11/burger-2-e1541949722401.jpeg" alt="Burger" /></div>
-    </div>
-</div>
 <div class="about-us" id="about">
     <h2 class="main-title">M&amp;L Burger Haus, pronto en Donostia.</h2>
     <div class="col">                        
