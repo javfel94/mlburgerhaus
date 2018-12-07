@@ -26,19 +26,14 @@
 	
 	<header id="masthead" class="site-header <?php if( !is_page_template( 'template-home.php' ) ) echo 'header-inner'; ?>" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 		<div class = "container">
-		<div class="site-branding" itemscope itemtype="http://schema.org/Organization">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2018/11/ML_burgerhaus_logo.png" width="70" height="70"/></a>
-		</div>
-			<div id="mobile-header">
-			    <a id="responsive-menu-button" href="#sidr-main">
-			    	<span class="fa fa-navicon"></span>
-			    </a>
-			</div> 
-		<nav id="site-navigation" class="main-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-			<div>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<div class="site-branding" itemscope itemtype="http://schema.org/Organization">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2018/11/ML_burgerhaus_logo.png" width="70" height="70"/></a>
 			</div>
-		</nav><!-- #site-navigation -->
+			<nav id="site-navigation" class="main-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+				<div>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				</div>
+			</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
 

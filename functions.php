@@ -37,7 +37,13 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 // END ENQUEUE PARENT ACTION
 
+//DISABLE LINKS TO IMAGES
+	
+add_action( 'after_setup_theme', 'default_attachment_display_settings' );
 
+function default_attachment_display_settings() {
+    update_option( 'image_default_link_type', 'none' );
+}
 
 function restaurant_and_cafe_banner_cb_child(){     // BANNER FOR CHILD THEME
     $restaurant_and_cafe_ed_slider_section = get_theme_mod( 'restaurant_and_cafe_ed_slider_section' );

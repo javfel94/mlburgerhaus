@@ -196,7 +196,7 @@ html, body, .site {
 .site-footer .col-3 {
 	padding-left: 15px;
 	padding-right: 15px;
-	margin-bottom: 30px;
+	margin-bottom: 5px;
 }
 
 .site-footer h2 {
@@ -207,6 +207,16 @@ html, body, .site {
 .widget-area .container {
 	display: flex;
 	justify-content: space-around;
+}
+
+.copyright {
+	text-align: center;
+}
+
+.copyright a {
+	font-weight: bold;
+	color: white;
+	margin-left: 10px;
 }
 
 
@@ -232,7 +242,8 @@ html, body, .site {
 		width: 100%;
 	}
 
-	.main-navigation ul li {
+	.main-navigation ul li,
+	.main-navigation ul li:first-child {
 		margin: auto;
 	}
 
@@ -247,9 +258,13 @@ html, body, .site {
 		position: relative;
 	}
 
+	.site-header .site-branding {
+		width: 100%;
+	}
+
 	.menu {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 
 	.container {
