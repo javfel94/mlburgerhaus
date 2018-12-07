@@ -104,41 +104,27 @@ html, body, .site {
 	font-size: 38px;
 }
 
-.about-us {
+.about-us-2 {
 	padding: 50px 50px;
 	background: black;
 	text-align: center;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
 }
 
-.about-row {
-	margin: 0 auto;
+.about-grid {
+	display: grid;
+	max-width: 1200px;
+	grid-template-columns: 3fr 2fr;
+	grid-gap: 40px 40px;
+	margin:auto;
+	align-items: center;
+	justify-items: center;
+}
+
+.about-us-2 p{
 	color: white;
-	display: flex;
-	padding-left: 10vw;
-	padding-right: 10vw;
-	padding-bottom: 100px;
-}
-
-.about-row p{
 	font-size: 24px;
 	text-align: justify;
-	flex: 3;
-	padding-right: 20vw;
 	margin-bottom: 0; /*override parent style*/
-}
-
-.img-container {
-	display: flex;
-	flex-direction: column;
-}
-
-.about-row img{
-	height: 80px;
-	margin-top: auto;
-	margin-bottom: auto;
 }
 
 .about-us-link {
@@ -146,6 +132,7 @@ html, body, .site {
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
+	margin-top: 60px;
 }
 
 .about-us-link a{
@@ -271,26 +258,20 @@ html, body, .site {
 		width: 90%;
 	}
 
-	.about-us {
-		padding: 30px 30px;
+	.about-us-2 {
+		padding: 20px 20px;
 	}
 
-	.about-row p{
+	.about-grid p{
 		font-size: 16px;
 		text-align: justify;
-		padding-right: 5vw;
 	}
 
 	.entry-content p{
 		font-size: 16px;
 	}
 
-	.about-row {
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	.about-us .main-title {
+	.about-us-2 .main-title {
 		font-size: 22px;
 		margin-bottom: 30px;
 	}

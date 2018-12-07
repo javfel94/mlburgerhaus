@@ -54,19 +54,15 @@ get_header();
     }
 
     ?>
-    <div class="about-us" id="about">
-        <h2 class="main-title">M&amp;L Burger Haus, pronto en Donostia.</h2>                             
-        <div class="about-row">                        
+    <div class="about-us-2" id="about-2">
+        <h2 class="main-title">M&amp;L Burger Haus, pronto en Donostia.</h2>   
+        <div class="about-grid">                                               
             <p>M&amp;L BurgerHaus nace con la intención de acercar esta ciudad, tan dada a la buena gastronomía, a un producto que en los últimos años ha dejado de ser considerado comida basura y se ha convertido en una comida saludable y gourmet.</p>
-            <div class="img-container"><img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2018/11/icons8-hamburger-80.png" alt="burger-image"/></div>                      
-        </div>
-        <div class="about-row">                                  
-            <p>La hamburguesa es el eje de nuestro local, pero ni mucho menos el único producto que ofrecemos. Alitas de pollo al auténtico estilo americano, suculentos postres caseros y una variada carta de cervezas artesanales son algunas de nuestras propuestas adicionales.</p>
-            <div class="img-container"><img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2018/11/icons8-beer-glass-64.png" alt="beer-image"/></div>                      
-        </div>
-        <div class="about-row">                        
+            <img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2018/11/icons8-hamburger-80.png" alt="burger-image"/>                                                     
+            <p>La hamburguesa es el eje de nuestro local, pero ni mucho menos el único producto que ofrecemos. Alitas de pollo al auténtico estilo americano, suculentos postres caseros y una variada carta de cervezas artesanales son algunas de nuestras propuestas adicionales.</p>                                                         
+            <img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2018/11/icons8-beer-glass-64.png" alt="beer-image"/>
             <p>En M&amp;L no nos olvidamos de nadie y por ello ofrecemos opciones para todo tipo de gustos: hamburguesas de ternera, de pollo y vegetarianas. Todo ello utilizando productos locales y de alta calidad. </p>
-            <div class="img-container"><img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2018/11/icons8-natural-food-64.png" alt="healthy-food-image"/></div>                    
+            <img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/2018/11/icons8-natural-food-64.png" alt="healthy-food-image"/>
         </div>
         <div class="about-us-link">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>conocenos/">Conócenos</a>
