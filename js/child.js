@@ -45,7 +45,7 @@ $(document).ready(function(){
     //Smooth scrolling
     $('.main-navigation a[href^="#about"]').on('click',function(event){
         event.preventDefault(); 
-        var h = $('.about-us').offset();
+        var h = $('.about-us-2').offset();
         scrollAnimation(h.top, 400);
     });
 
